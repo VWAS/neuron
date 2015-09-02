@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Neuron | VWAS Studios</title>
+
+	<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://tachyons.io/css/tachyons.min.css">
+
+	<meta name="author" content="@enociz">
+	<meta name="keywords" content="neuron, markup, Vladmir, Danila, Enoch, Appathurai, Codinator, Code, language, templating, convert, HTML, brain, Playgrounds, Projects, VWAS, v, w, a, s, studios, studio, help">
+	<meta name="description" content="Neuron is a markup language from the team at VWAS Studios. It is featured in their application: Codinator. Find out more by visiting this site.">
+	<meta name="robots" content="index, follow, archive, snippet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<!--[if ie]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="imagetoolbar" content="false" />
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="man pan w-100">
+    <header class="dt bg-neu-orange white paxs man h3">
+          <nav class="dtc v-mid pan man">
+            <ul class="w-100 pln mvn mln tl tc-ns">
+              <li class="dib link">
+                <a class="link semibold bold-ns ttu-ns tracked-mega-ns dim white pas pam-ns" href="/neuron">Home</a>
+              </li>
+              <li class="dib  ">
+                <a class="link semibold bold-ns ttu-ns tracked-mega-ns dim white pas pam-ns" href="/neuron/docs">Docs</a>
+              </li>
+              <li class="dib  ">
+                <a class="link semibold bold-ns ttu-ns tracked-mega-ns dim white pas pam-ns" href="/neuron/press">Press Kit</a>
+              </li>
+              <li class="dib  ">
+                <a class="link semibold bold-ns ttu-ns tracked-mega-ns dim white pas pam-ns" href="/">VWAS Studios</a>
+              </li>
+            </ul>
+          </nav>
+        <!--<nav class="h2">
+            <ul class="list cf">
+                <li class="f3 fl b ttu"><a href="index.html" class="white no-underline">NEURON</a></li> 
+                <li class="dib dn-ns f3 fr mln mra mvn"><a href="#" class="mln mra white no-underline hide-sibling">See More ▼</a>
+                    <ul class="sibling man pan bg-white list ba b--near-black">
+                        <li class="f4 tr"><a href="docs.html" class="tr black no-underline">Documentation</a>
+                        <li class="f4 tr"><a href="press.html" class="tr black no-underline">Press Kit</a>
+                        <li class="f4 tr"><a href="http://vwas.pfweb.eu" class="tr black no-underline">VWAS Studios</a>
+                    </ul>
+                </li>
+            </ul> 
+        </nav>-->
+    </header> 
+    <main class="pas measure center">
+<h1>Neuron | Docs</h1>
+
+<h2>Importing</h2>
+
+<p>Importing frameworks are more efficient as Neuron only converts what it needs and leaves the bloat behind from your CSS and JS frameworks</p>
+
+<hr />
+
+<h2>Media-based programming</h2>
+
+<p>When writing your code, you can target specific devices using our mind-blowingly simple media queries and serve to them the HTML, CSS and JS that they need.</p>
+
+<p>To use these media queries, you use:</p>
+
+<pre><code>IF(is{DeviceName})
+
+{do this code}
+
+ENDIF(is{DeviceName})
+</code></pre>
+
+<p>However, make sure that you replace <code>{DeviceName}</code> with the type of device you&#8217;re targeting (we support <code>Mobile</code>, <code>PC</code>, <code>Console</code>, <code>Mac</code>, <code>Windows</code>) and <code>{code}</code> with whatever code you need specifically for that device.</p>
+
+<p>The browser will only be served up content for its device meaning that your pages load a lot faster.</p>
+
+<blockquote>
+<p><strong>Pro Tip</strong></p>
+
+<p>Build your sites Mobile First and Additively. This means that you build what the smallest device and add in the components that bigger devices will use so that you avoid having unnecessary code.</p>
+</blockquote>
+
+<hr />
+
+<h2>The Syntax</h2>
+
+<p>Neuron has two types of syntax. The first is the block syntax that is to be used for basic page layout. The second is the modifier syntax which is used for bonding, italicising, striking through and hyperlinking content on your page.</p>
+
+<h3>Block Syntax</h3>
+
+<p>Neuron&#8217;s block layout is as follows:</p>
+
+<pre><code>{ELEMENT}
+    {content}
+/{ELEMENT}
+</code></pre>
+
+<p>Replace <code>{ELEMENT}</code> with the HTML element that you desire such as <code>SECTION</code> or <code>P</code> or <code>IMG(src: &quot;path/to/pic.png&quot;, alt: &quot;alternative text&quot;)</code> (more on that last one later).</p>
+
+<p><strong>PSA:</strong> Neuron only recognises CAPITAL LETTERS for it&#8217;s syntaxes - remember to use them.</p>
+
+<p>Replace <code>{content}</code> with the rest of the content on your page. This can be another block or it can be a modifier.</p>
+
+<h3>Modifiers&#8217; Syntax</h3>
+
+<p>Modifiers are objects in your page that are specific and small. This is things like bold, italic, strikethrough or an anchor.</p>
+
+<p>Modifiers are written as follows:</p>
+
+<pre><code>{Modifier}(&quot;{content}&quot;){Modifier}
+</code></pre>
+
+<p>where <code>{Modifier}</code> is replaced with a modifier element such as <code>B</code> (note the CAPS) and {content} is text or other content like &#8220;This is bolded text&#8221;.</p>
+
+<h3>Attributes</h3>
+
+<h3>Hierarchy through Tabbing</h3>
+
+<ul>
+<li>variables (coming 2016)</li>
+<li>open source (coming 2016)</li>
+</ul>
+    </main>
+
+<hr>
+
+    <footer class="pas">
+        <h6>© 2015 VWAS Studios. Neuron™ is a trademark of VWAS Studios Inc. All rights reserved. For information on referring to Neuron in other places, please refer to the <a href="press.html">press kit</a>.</h6>
+    </footer> 
+</body> 
+</html>
